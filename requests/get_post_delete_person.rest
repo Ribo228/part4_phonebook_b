@@ -1,0 +1,48 @@
+GET http://localhost:3001/api/persons
+
+###
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "0310 user-2",
+    "number": "444444",
+    "userId": "651a429dac857e7441d538f1"
+}
+
+###
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5c2VybmFtZSI6Im1sdXVra2FpIiwiaW
+
+{
+    "name": "0410 token",
+    "number": "5555555"
+ }
+
+
+###
+DELETE http://localhost:3001/api/persons/650aa4656be9cc42e94661c8
+
+###
+GET http://localhost:3001/api/users
+
+
+###
+POST http://localhost:3001/api/users
+Content-Type: application/json
+
+{
+    "username": "root",
+    "name": "superuser",
+    "password": "password"
+}
+
+###
+POST http://localhost:3001/api/login
+Content-Type: application/json
+
+{
+    "username": "root",
+    "password": "password"
+}
